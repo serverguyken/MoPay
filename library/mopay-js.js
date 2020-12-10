@@ -47,13 +47,15 @@ class MoPayment {
         const checkout_Id  = generateCheckoutID();
         const token  = generateToken();
         const payWithMoButton = document.getElementById('PayWithMo');
+        const shopName = document.getElementsByTagName('title')[0].innerText;
+        console.log(shopName);
         if(!payWithMoButton) {
             error = Logger.error("PaywithMo button not defined");
         }
         payWithMoButton.addEventListener('click', e => {
             e.preventDefault();
             success = Logger.info("Starting payment transsaction")
-            location.href = `https://pay.mosregal.com?token=${token}&checkout_Id=${checkout_Id}`
+            location.href = `https://pay.mosregal.com?shop=${shopName}&token=${token}&checkout_Id=${checkout_Id}`
         })
     }
 }
