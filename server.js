@@ -2,8 +2,8 @@
 
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8100;
-const admin = require("firebase-admin");
+const port = process.env.PORT || 4000;
+const admin = require('firebase-admin')
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require('path');
