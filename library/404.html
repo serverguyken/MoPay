@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found</title>
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box;">
+    <div class="center" id="center" style="margin: 30px; margin-top:20px; padding: 0 1em 0 1em; border: 2px solid #c77; background: #fdd; color: #000;">
+        <h3>This page contains the following errors:</h3>
+        <h4>Can't find requestedUrl : <span id="requestedUrl"></span></h4>
+        <p id="code" style="font-size: 14px;"></p>
+        <p>&copy; Echodesk Technology</p>
+    </div>
+    <script>
+        const requestedUrl = location.href;
+        document.getElementById('requestedUrl').innerText = requestedUrl
+        document.getElementById('code').innerHTML = `
+        <Error>Server was not able to retrieve the requested page.</Error>
+        `;
+    </script>
+</body>
+</html>
