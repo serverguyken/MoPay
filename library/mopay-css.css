@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;700;900&display=swap');
+
+#PayWithMo {
+    background-color: #c70505;
+    color: #fff;
+    border: none;
+    user-select: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+   animation: 1s moPayButtonFadeIn;
+   cursor: pointer;
+}
+
+
+.mo-pay-border {
+    background: #fff;
+    color: #c70505;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 14px;
+    padding-top: -2px;
+    margin-left: 2px;
+}
+
+
+@keyframes moPayButtonFadeIn {
+   0% {
+       opacity: 0;
+       transform: translateY(4px);
+   }
+   100% {
+    opacity: 1;
+    transition: 2s ease-in-out;
+    transform: translateY(0px);
+   }
+}
